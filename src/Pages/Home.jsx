@@ -29,7 +29,7 @@ function Home() {
   return (
 <>
 <Header insideHome/>
-      <div style={{paddingTop:'100px'}}>
+      <div style={{paddingTop:'30px'}}>
         {
           loading? <div className='text-center'><Spinner animation="border" variant="primary" />Loading..
           </div>:
@@ -53,7 +53,7 @@ function Home() {
         <div className='d-flex justify-content-center mt-5'>
           <span onClick={handlePrePage} style={{cursor:'pointer'}}><i className='fa-solid fa-backward me-2'></i> </span>
           <span className='fw-bolder'>{currentPage} to {totalPage} </span>
-          <span onClick={handleNextPage} style={{cursor:'pointer'}}> <i className='fa-solid fa-forward me-2'></i> </span>
+          <span onClick={handleNextPage} style={{cursor:'pointer'}}> <i className='fa-solid fa-forward me-2'> </i> </span>
         </div>
       </div>
   
